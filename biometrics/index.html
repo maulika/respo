@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+   <meta charset="utf-8" />
+   <title>Glonetex | BioWave Systems</title>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <meta content="" name="description" />
+   <meta content="" name="author" />
+   <!-- BEGIN GLOBAL MANDATORY STYLES -->
+   <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/css/style-metro.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/css/themes/orange.css" rel="stylesheet" type="text/css" id="style_color"/>
+   <link href="assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+   <!-- END GLOBAL MANDATORY STYLES -->
+   <!-- BEGIN PAGE LEVEL STYLES --> 
+   <link href="assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
+   <link href="assets/plugins/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css"/>
+   <link href="assets/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" media="screen"/>
+   <link href="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.css" rel="stylesheet"/>
+   <link href="assets/plugins/jquery-ui/jquery.ui.slider-rtl.css" rel="stylesheet"/>
+
+   <!-- END PAGE LEVEL STYLES -->
+   <link rel="shortcut icon" href="icon.ico" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="fixed-top">
+   <!-- BEGIN HEADER -->
+   <div class="header navbar navbar-inverse navbar-fixed-top">
+      <!-- BEGIN TOP NAVIGATION BAR -->
+      <div class="navbar-inner">
+         <div class="container-fluid">
+            <!-- BEGIN LOGO -->
+            <a class="brand" href="index.html">
+            <img src="assets/img/logo.png" alt="logo" />
+            </a>
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+            <img src="assets/img/menu-toggler.png" alt="" />
+            </a>          
+            <!-- END RESPONSIVE MENU TOGGLER -->            
+            <!-- BEGIN TOP NAVIGATION MENU -->              
+            <ul class="nav pull-right">
+               <!-- BEGIN NOTIFICATION DROPDOWN -->   
+               <li class="dropdown" id="header_notification_bar">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="icon-warning-sign"></i>
+                  <span class="badge">6</span>
+                  </a>
+                  <ul class="dropdown-menu extended notification">
+                     <li>
+                        <p>You have 14 new notifications</p>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <span class="label label-success"><i class="icon-plus"></i></span>
+                        New user registered. 
+                        <span class="time">Just now</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <span class="label label-important"><i class="icon-bolt"></i></span>
+                        Server #12 overloaded. 
+                        <span class="time">15 mins</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <span class="label label-warning"><i class="icon-bell"></i></span>
+                        Server #2 not respoding.
+                        <span class="time">22 mins</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <span class="label label-info"><i class="icon-bullhorn"></i></span>
+                        Application error.
+                        <span class="time">40 mins</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <span class="label label-important"><i class="icon-bolt"></i></span>
+                        Database overloaded 68%. 
+                        <span class="time">2 hrs</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <span class="label label-important"><i class="icon-bolt"></i></span>
+                        2 user IP blocked.
+                        <span class="time">5 hrs</span>
+                        </a>
+                     </li>
+                     <li class="external">
+                        <a href="#">See all notifications <i class="m-icon-swapright"></i></a>
+                     </li>
+                  </ul>
+               </li>
+               <!-- END NOTIFICATION DROPDOWN -->
+               <!-- BEGIN USER LOGIN DROPDOWN -->
+               <li class="dropdown user">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img alt="" src="assets/img/avatar1_small.jpg" />
+                  <span class="username">Welcome Administrator</span>
+                  <i class="icon-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                     <li><a href="profile.html"><i class="icon-user"></i> My Profile</a></li>
+                     <li class="divider"></li>
+                     <li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
+                  </ul>
+               </li>
+               <!-- END USER LOGIN DROPDOWN -->
+            </ul>
+            <!-- END TOP NAVIGATION MENU --> 
+         </div>
+      </div>
+      <!-- END TOP NAVIGATION BAR -->
+   </div>
+   <!-- END HEADER -->
+   <!-- BEGIN CONTAINER -->
+   <div class="page-container">
+      <!-- BEGIN SIDEBAR -->
+      <div class="page-sidebar nav-collapse collapse">
+     	 <!-- BEGIN SIDEBAR MENU -->
+        	 <ul>
+				<li>
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+					<div class="sidebar-toggler hidden-phone"></div>
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+				</li>
+				<li>
+					<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+					<form class="sidebar-search">
+						<div class="input-box">
+							<a href="javascript:;" class="remove"></a>
+							<input type="text" placeholder="Search Registrants..." />				
+							<input type="button" class="submit" value=" " />
+						</div>
+					</form>
+					<!-- END RESPONSIVE QUICK SEARCH FORM -->
+				</li>
+				
+			<!-- START DASHBOARD MENU -->
+        		<li class="start active">
+        			<a href="index.html">
+					<i class="icon-home"></i> 
+					<span class="title">Dashboard</span>
+					<span class="selected"></span>
+					</a>
+				</li>
+
+			<!-- START SYSTEM SETTINGS MENU-->
+        		<li class="">
+        			<a href="javascript:;">
+					<i class="icon-cogs"></i> 
+					<span class="title">System Settings</span>
+					<span class="arrow"></span>
+					</a>
+					  <ul class="sub-menu">
+						<li >
+						<a href="admin_details.html">Admin Details</a>
+					    </li>
+						  
+						<li >
+					    <a href="alerts.html">Alerts & Notifications</a>
+						</li>
+
+						<li >
+					    <a href="biometric_settings.html">Biometric Settings</a>
+						</li>
+
+						<li >
+					    <a href="company_groups.html">Company & Groups</a>
+						</li>
+
+						<li >
+					    <a href="server_settings.html">Server Settings</a>
+						</li>
+						
+						<li >
+						<a href="visitor_settings.html">Visitor Settings</a>
+						</li>
+					  </ul>
+				</li>
+
+			<!-- START BIOMETRIC SERVICES MENU -->
+        		<li class="">
+        			<a href="biometric_services.html">
+					<i class="icon-eye-open"></i> 
+					<span class="title">Biometric Services</span>
+					<span class="arrow"></span>
+					</a>
+					  <ul class="sub-menu">
+						<li >
+						<a href="authenticate.html">Authenticate Person</a>
+						</li>
+						
+						<li >
+						<a href="device_manager.html">Device Manager</a>
+						</li>
+						
+						<li >
+						<a href="enroll.html">Enroll Person</a>
+						</li>
+						
+						<li >
+						<a href="enrollees_view.html">View Enrollees</a>
+						</li>
+					  </ul>
+				</li>
+
+			<!-- START MANAGE USERS MENU -->
+				<li>
+					<a class="active" href="javascript:;">
+					<i class="icon-user"></i> 
+					<span class="title">Manage Users</span>
+					<span class="arrow"></span>
+					</a>
+						<ul class="sub-menu">
+							<li >
+							<a href="user_create.html">Create</a>
+						    </li>
+							
+							<li >
+							<a href="user_view.html">View</a>
+						    </li>
+						</ul>
+					</li>
+
+			<!-- START MANAGE VOTING MENU-->
+        		<li class="">
+        			<a href="">
+					<i class="icon-comment"></i> 
+					<span class="title">Manage Voting</span>
+					<span class="arrow"></span>
+					</a>
+						<ul class="sub-menu">
+							<li >
+							<a href="voting_create.html">Create Vote</a>
+						    </li>
+
+							<li >
+							<a href="voting_survey.html">Create Survey</a>
+						    </li>
+
+							<li >
+							<a href="voting_view.html">View</a>
+						    </li>
+							
+							<li >
+							<a href="voting_feedback.html">Manage Feedback</a>
+						    </li>
+						</ul>
+					</li>
+
+			<!-- START REPORTS MENU -->
+        		<li class="">
+        			<a href="">
+					<i class="icon-folder-open"></i> 
+					<span class="title"> Reports</span>
+					<span class="arrow "></span>
+					</a>
+						<ul class="sub-menu">
+							<li >
+							<a href="admin_reports.html">Administrative Reports</a>
+							</li>
+							
+							<li >
+							<a href="biometric_reports.html">Biometric Reports</a>
+							</li>
+																	
+							<li >
+							<a href="visitor_reports.html">Visitor Reports</a>
+							</li>
+							
+							<li >
+							<a href="voting_reports.html">Voting Reports</a>
+							</li>
+						</ul>
+					</li>
+
+			<!-- START VISITOR CHECK IN MENU -->
+        		<li class="">
+        			<a href="visitor.html">
+					<i class="icon-signin"></i> 
+					<span class="title">Visitor Check In / Out</span>
+					</a>
+				</li>
+				
+			<!-- START IMPORT EXPORT MENU -->
+        		<li class="">
+        			<a href="import_export.html">
+					<i class="icon-upload-alt"></i> 
+					<span class="title">Import / Export</span>
+					</a>
+				</li>
+
+			<!-- START SIGN OUT MENU -->
+        		<li class="">
+        			<a href="login.html">
+					<i class="icon-lock"></i> 
+					<span class="title">Sign Out</span>
+				    </a>
+				</li>
+
+			<!-- START KIOSK MODE MENU -->
+        		<li class="">
+        			<a href="login_kiosk.html">
+					<i class="icon-off"></i> 
+					<span class="title">Kiosk Mode</span>
+ 				    </a>
+ 				</li>				
+ 			</ul>
+		<!-- END SIDEBAR MENU -->
+      </div>
+      <!-- END SIDEBAR -->
+      <!-- BEGIN PAGE -->
+      <div class="page-content">
+         <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+         <div id="portlet-config" class="modal hide">
+            <div class="modal-header">
+               <button data-dismiss="modal" class="close" type="button"></button>
+               <h3>Widget Settings</h3>
+            </div>
+            <div class="modal-body">
+               Widget settings form goes here
+            </div>
+         </div>
+         <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+         <!-- BEGIN PAGE CONTAINER-->
+         <div class="container-fluid">
+            <!-- BEGIN PAGE HEADER-->
+            <div class="row-fluid">
+               <div class="span12">
+                  <!-- BEGIN PAGE TITLE & BREADCRUMB-->			
+			<h3 class="page-title">
+									Dashboard					<small>statistics and more</small>
+							</h3>
+			<ul class="breadcrumb">
+				<li>
+					<i class="icon-home"></i>
+					<a href="index.html">Home</a> 
+										
+					<i class="icon-angle-right"></i>
+									</li>
+								<li><a href="">Dashboard</a></li>	
+						
+									<li class="pull-right no-text-shadow">
+						<div id="dashboard-report-range" class="dashboard-date-range tooltips no-tooltip-on-touch-device responsive" data-tablet="" data-desktop="tooltips" data-placement="top" data-original-title="Change dashboard date range">
+							<i class="icon-calendar"></i>
+							<span></span>
+							<i class="icon-angle-down"></i>
+						</div>
+					</li>
+						
+			</ul>
+		<!-- END PAGE TITLE & BREADCRUMB-->
+               </div>
+            </div>
+            <!-- END PAGE HEADER-->
+            <div id="dashboard">
+               <!-- BEGIN DASHBOARD STATS -->
+               <div class="row-fluid">
+                  <div class="span4" data-tablet="span6" data-desktop="span3">
+                     <div class="dashboard-stat blue">
+                        <div class="visual">
+                           <i class="icon-comments"></i>
+                        </div>
+                        <div class="details">
+                           <div class="number">
+                              1349
+                           </div>
+                           <div class="desc">                           
+                              Voting Feedback
+                           </div>
+                        </div>
+                        <a class="more" href="#">
+                        View more <i class="m-icon-swapright m-icon-white"></i>
+                        </a>                 
+                     </div>
+                  </div>
+                  <div class="span4" data-tablet="span6" data-desktop="span3">
+                     <div class="dashboard-stat green">
+                        <div class="visual">
+                           <i class="icon-user"></i>
+                        </div>
+                        <div class="details">
+                           <div class="number">549</div>
+                           <div class="desc">New Registrants</div>
+                        </div>
+                        <a class="more" href="#">
+                        View more <i class="m-icon-swapright m-icon-white"></i>
+                        </a>                 
+                     </div>
+                  </div>
+                  <div class="span4 " data-tablet="span6" data-desktop="span3">
+                     <div class="dashboard-stat purple">
+                        <div class="visual">
+                           <i class="icon-bar-chart"></i>
+                        </div>
+                        <div class="details">
+                           <div class="number">10</div>
+                           <div class="desc">Available Devices</div>
+                        </div>
+                        <a class="more" href="#">
+                        View more <i class="m-icon-swapright m-icon-white"></i>
+                        </a>                 
+                     </div>
+                  </div>
+               </div>
+               <div class="row-fluid">
+               <div class="span12">
+                  <!-- BEGIN PORTLET-->
+                  <div class="portlet box yellow">
+                     <div class="portlet-title">
+                        <div class="caption"><i class="icon-reorder"></i>Enrollment Stats</div>
+                        <div class="tools">
+                           <a href="javascript:;" class="collapse"></a>
+                           <a href="#portlet-config" data-toggle="modal" class="config"></a>
+                           <a href="javascript:;" class="reload"></a>
+                           <a href="javascript:;" class="remove"></a>
+                        </div>
+                     </div>
+                     <div class="portlet-body">
+                        <div class="row-fluid">
+                           <div class="span3 responsive" data-tablet="span6" data-desktop="span3">
+                              <div class="circle-stat">
+                                 <div class="visual">
+                                    <input class="knobify" data-width="115" data-fgcolor="#4b8df8" data-thickness=".2" data-skin="tron" data-displayprevious="true" value="+89" data-max="100" data-min="-100" />
+                                 </div>
+                                 <div class="details">
+                                    <div class="title">Voting Polls <i class="icon-caret-up"></i></div>
+                                    <div class="number"> 12</div>
+                                    <span class="label label-success"><i class="icon-map-marker"></i> 23</span>
+                                    <span class="label label-warning"><i class="icon-comment"></i> 3</span>
+                                    <span class="label label-info"><i class="icon-bullhorn"></i> 3</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="span3 responsive" data-tablet="span6" data-desktop="span3">
+                              <div class="circle-stat block">
+                                 <div class="visual">
+                                    <input class="knobify" data-width="115" data-fgcolor="#852b99" data-thickness=".2" data-skin="tron" data-displayprevious="true" value="+19" data-max="100" data-min="-100" />
+                                 </div>
+                                 <div class="details">
+                                    <div class="title">Registrations <i class="icon-caret-up"></i></div>
+                                    <div class="number">987</div>
+                                    <span class="label label-important"><i class="icon-bullhorn"></i> 567</span>
+                                    <span class="label"><i class="icon-plus"></i> 16</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="span3 responsive" data-tablet="span6 fix-margin" data-desktop="span3">
+                              <div class="circle-stat block">
+                                 <div class="visual">
+                                    <input class="knobify" data-width="115" data-fgcolor="#ffb848" data-thickness=".2" data-skin="tron" data-displayprevious="true" value="-12" data-max="100" data-min="-100" />
+                                 </div>
+                                 <div class="details">
+                                    <div class="title">Weekly Users <i class="icon-caret-down down"></i></div>
+                                    <div class="number">0.01%</div>
+                                    <span class="label label-info"><i class="icon-bookmark-empty"></i> 23</span>
+                                    <span class="label label-warning"><i class="icon-ok"></i> 31</span>
+                                    <span class="label label-success"><i class="icon-briefcase"></i> 39</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="span3 responsive" data-tablet="span6" data-desktop="span3">
+                              <div class="circle-stat block">
+                                 <div class="visual">
+                                    <input class="knobify" data-width="115" data-fgcolor="#e02222" data-thickness=".2" data-skin="tron" data-displayprevious="true" value="+58" data-max="100" data-min="-100" />
+                                 </div>
+                                 <div class="details">
+                                    <div class="title">Visitors <i class="icon-caret-up"></i></div>
+                                    <div class="number">112</div>
+                                    <span class="label label-success"><i class="icon-comment"></i> 53</span>
+                                    <span class="label label-inverse"><i class="icon-globe"></i> 23</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                           <!--BEGIN PRINT REPORT / PDF ICONS-->
+                              <div align="right">
+                              <a href="#" class="btn blue mini"><i class="icon-print"></i> Print Report</a>
+                              <a href="#" class="btn blue mini"><i class="icon-download-alt"></i> Download PDF</a>
+                              </div>
+                           <!--END PRINT REPORT / PDF ICONS-->
+                     </div>
+                  </div>
+                  <!-- END PORTLET-->
+               </div>
+               <!-- END DASHBOARD STATS -->
+               <div class="clearfix"></div>
+               <div class="row-fluid">
+                  <div class="span12">
+                  <!-- BEGIN ALERTS PORTLET-->
+                  <div class="portlet ">
+                     <div class="portlet-title">
+                        <div class="caption"><i class="icon-cogs"></i>Alerts</div>
+                        <div class="tools">
+                           <a href="javascript:;" class="collapse"></a>
+                           <a href="#portlet-config" data-toggle="modal" class="config"></a>
+                           <a href="javascript:;" class="reload"></a>
+                           <a href="javascript:;" class="remove"></a>
+                        </div>
+                     </div>
+                     <div class="portlet-body">
+	                    <div class="alert alert-success">
+	                       <button class="close" data-dismiss="alert"></button>
+	                       <span class="label label-important">SYSTEM ALERT:</span> Fingerprint Scanner Kiosk not responding. Third Mainland Branch.
+	                    </div>
+                        <div class="alert">
+                           <button class="close" data-dismiss="alert"></button>
+                           <strong>Warning!</strong> Your monthly traffic is reaching limit.
+                        </div>
+                        <div class="alert alert-success">
+                           <button class="close" data-dismiss="alert"></button>
+                           <strong>Success!</strong> The page has been added.
+                        </div>
+                        <div class="alert alert-error">
+                           <button class="close" data-dismiss="alert"></button>
+                           <strong>Error!</strong> The daily cronjob has failed.
+                        </div>
+                     </div>
+                  </div>
+                  <!-- END ALERTS PORTLET-->
+                  </div>
+               </div>
+               <div class="clearfix"></div>
+               <div class="row-fluid">
+                  <div class="span6">
+                     <!-- BEGIN REGIONAL STATS PORTLET-->
+                     <div class="portlet">
+                        <div class="portlet-title">
+                           <div class="caption"><i class="icon-globe"></i>Regional Stats</div>
+                           <div class="tools">
+                              <a href="javascript:;" class="collapse"></a>
+                              <a href="#portlet-config" data-toggle="modal" class="config"></a>
+                              <a href="javascript:;" class="reload"></a>
+                              <a href="javascript:;" class="remove"></a>
+                           </div>
+                        </div>
+                        <div class="portlet-body">
+                           <div id="region_statistics_loading">
+                              <img src="assets/img/loading.gif" alt="loading" />
+                           </div>
+                           <div id="region_statistics_content" class="hide">
+                              <div class="btn-toolbar">
+                                 <div class="btn-group " data-toggle="buttons-radio">
+                                    <a href="javascript:;" class="btn mini active">Users</a>
+                                    <a href="javascript:;" class="btn mini">Orders</a> 
+                                 </div>
+                                 <div class="btn-group pull-right">
+                                    <a href="javascript:;" class="btn mini dropdown-toggle" data-toggle="dropdown">
+                                    Select Region <span class="icon-angle-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                       <li><a href="javascript:;" id="regional_stat_world">World</a></li>
+                                       <li><a href="javascript:;" id="regional_stat_usa">USA</a></li>
+                                       <li><a href="javascript:;" id="regional_stat_europe">Europe</a></li>
+                                       <li><a href="javascript:;" id="regional_stat_russia">Russia</a></li>
+                                       <li><a href="javascript:;" id="regional_stat_germany">Germany</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div id="vmap_world" class="vmaps chart hide"></div>
+                              <div id="vmap_usa" class="vmaps chart hide"></div>
+                              <div id="vmap_europe" class="vmaps chart hide"></div>
+                              <div id="vmap_russia" class="vmaps chart hide"></div>
+                              <div id="vmap_germany" class="vmaps chart hide"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- END REGIONAL STATS PORTLET-->
+                  </div>
+                  <div class="span6">
+                     <!-- BEGIN PORTLET-->
+                     <div class="portlet paddingless">
+                        <div class="portlet-title line">
+                           <div class="caption"><i class="icon-bell"></i>Feeds</div>
+                           <div class="tools">
+                              <a href="javascript:;" class="collapse"></a>
+                              <a href="#portlet-config" data-toggle="modal" class="config"></a>
+                              <a href="javascript:;" class="reload"></a>
+                              <a href="javascript:;" class="remove"></a>
+                           </div>
+                        </div>
+                        <div class="portlet-body">
+                           <!--BEGIN TABS-->
+                           <div class="tabbable tabbable-custom">
+                              <ul class="nav nav-tabs">
+                                 <li class="active"><a href="#tab_1_1" data-toggle="tab">System</a></li>
+                                 <li><a href="#tab_1_2" data-toggle="tab">Activities</a></li>
+                                 <li><a href="#tab_1_3" data-toggle="tab">Recent Users</a></li>
+                              </ul>
+                              <div class="tab-content">
+                                 <div class="tab-pane active" id="tab_1_1">
+                                    <div class="scroller" data-height="290px" data-always-visible="1" data-rail-visible="0">
+                                       <ul class="feeds">
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-success">                        
+                                                         <i class="icon-bell"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         You have 4 pending tasks.
+                                                         <span class="label label-important label-mini">
+                                                         Take action 
+                                                         <i class="icon-share-alt"></i>
+                                                         </span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   Just now
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="col1">
+                                                   <div class="cont">
+                                                      <div class="cont-col1">
+                                                         <div class="label label-success">                        
+                                                            <i class="icon-bell"></i>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cont-col2">
+                                                         <div class="desc">
+                                                            New version v1.4 just lunched!   
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col2">
+                                                   <div class="date">
+                                                      20 mins
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-important">                      
+                                                         <i class="icon-bolt"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         Database server #12 overloaded. Please fix the issue.                      
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   24 mins
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-info">                        
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   30 mins
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-success">                        
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   40 mins
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-warning">                        
+                                                         <i class="icon-plus"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New user registered.                
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   1.5 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-success">                        
+                                                         <i class="icon-bell-alt"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         Web server hardware needs to be upgraded. 
+                                                         <span class="label label-inverse label-mini">Overdue</span>             
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   2 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label">                       
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   3 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-warning">                        
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   5 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-info">                        
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   18 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label">                       
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   21 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-info">                        
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   22 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label">                       
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   21 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-info">                        
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   22 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label">                       
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   21 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-info">                        
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   22 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label">                       
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   21 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-info">                        
+                                                         <i class="icon-bullhorn"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         New order received. Please take care of it.                 
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   22 hours
+                                                </div>
+                                             </div>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane" id="tab_1_2">
+                                    <div class="scroller" data-height="290px" data-always-visible="1" data-rail-visible1="1">
+                                       <ul class="feeds">
+                                          <li>
+                                             <a href="#">
+                                                <div class="col1">
+                                                   <div class="cont">
+                                                      <div class="cont-col1">
+                                                         <div class="label label-success">                        
+                                                            <i class="icon-bell"></i>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cont-col2">
+                                                         <div class="desc">
+                                                            New user registered
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col2">
+                                                   <div class="date">
+                                                      Just now
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="col1">
+                                                   <div class="cont">
+                                                      <div class="cont-col1">
+                                                         <div class="label label-success">                        
+                                                            <i class="icon-bell"></i>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cont-col2">
+                                                         <div class="desc">
+                                                            New order received 
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col2">
+                                                   <div class="date">
+                                                      10 mins
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <div class="col1">
+                                                <div class="cont">
+                                                   <div class="cont-col1">
+                                                      <div class="label label-important">                      
+                                                         <i class="icon-bolt"></i>
+                                                      </div>
+                                                   </div>
+                                                   <div class="cont-col2">
+                                                      <div class="desc">
+                                                         Order #24DOP4 has been rejected.    
+                                                         <span class="label label-important label-mini">Take action <i class="icon-share-alt"></i></span>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <div class="col2">
+                                                <div class="date">
+                                                   24 mins
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="col1">
+                                                   <div class="cont">
+                                                      <div class="cont-col1">
+                                                         <div class="label label-success">                        
+                                                            <i class="icon-bell"></i>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cont-col2">
+                                                         <div class="desc">
+                                                            New user registered
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col2">
+                                                   <div class="date">
+                                                      Just now
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="col1">
+                                                   <div class="cont">
+                                                      <div class="cont-col1">
+                                                         <div class="label label-success">                        
+                                                            <i class="icon-bell"></i>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cont-col2">
+                                                         <div class="desc">
+                                                            New user registered
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col2">
+                                                   <div class="date">
+                                                      Just now
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="col1">
+                                                   <div class="cont">
+                                                      <div class="cont-col1">
+                                                         <div class="label label-success">                        
+                                                            <i class="icon-bell"></i>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cont-col2">
+                                                         <div class="desc">
+                                                            New user registered
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col2">
+                                                   <div class="date">
+                                                      Just now
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="col1">
+                                                   <div class="cont">
+                                                      <div class="cont-col1">
+                                                         <div class="label label-success">                        
+                                                            <i class="icon-bell"></i>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cont-col2">
+                                                         <div class="desc">
+                                                            New user registered
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col2">
+                                                   <div class="date">
+                                                      Just now
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="col1">
+                                                   <div class="cont">
+                                                      <div class="cont-col1">
+                                                         <div class="label label-success">                        
+                                                            <i class="icon-bell"></i>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cont-col2">
+                                                         <div class="desc">
+                                                            New user registered
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col2">
+                                                   <div class="date">
+                                                      Just now
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="col1">
+                                                   <div class="cont">
+                                                      <div class="cont-col1">
+                                                         <div class="label label-success">                        
+                                                            <i class="icon-bell"></i>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cont-col2">
+                                                         <div class="desc">
+                                                            New user registered
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col2">
+                                                   <div class="date">
+                                                      Just now
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#">
+                                                <div class="col1">
+                                                   <div class="cont">
+                                                      <div class="cont-col1">
+                                                         <div class="label label-success">                        
+                                                            <i class="icon-bell"></i>
+                                                         </div>
+                                                      </div>
+                                                      <div class="cont-col2">
+                                                         <div class="desc">
+                                                            New user registered
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="col2">
+                                                   <div class="date">
+                                                      Just now
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane" id="tab_1_3">
+                                    <div class="scroller" data-height="290px" data-always-visible="1" data-rail-visible1="1">
+                                       <div class="row-fluid">
+                                          <div class="span6 user-info">
+                                             <img alt="" src="assets/img/avatar.png" />
+                                             <div class="details">
+                                                <div>
+                                                   <a href="#">Robert Nilson</a> 
+                                                   <span class="label label-success">Approved</span>
+                                                </div>
+                                                <div>29 Jan 2013 10:45AM</div>
+                                             </div>
+                                          </div>
+                                          <div class="span6 user-info">
+                                             <img alt="" src="assets/img/avatar.png" />
+                                             <div class="details">
+                                                <div>
+                                                   <a href="#">Lisa Miller</a> 
+                                                   <span class="label label-info">Pending</span>
+                                                </div>
+                                                <div>19 Jan 2013 10:45AM</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row-fluid">
+                                          <div class="span6 user-info">
+                                             <img alt="" src="assets/img/avatar.png" />
+                                             <div class="details">
+                                                <div>
+                                                   <a href="#">Eric Kim</a> 
+                                                   <span class="label label-info">Pending</span>
+                                                </div>
+                                                <div>19 Jan 2013 12:45PM</div>
+                                             </div>
+                                          </div>
+                                          <div class="span6 user-info">
+                                             <img alt="" src="assets/img/avatar.png" />
+                                             <div class="details">
+                                                <div>
+                                                   <a href="#">Lisa Miller</a> 
+                                                   <span class="label label-important">In progress</span>
+                                                </div>
+                                                <div>19 Jan 2013 11:55PM</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row-fluid">
+                                          <div class="span6 user-info">
+                                             <img alt="" src="assets/img/avatar.png" />
+                                             <div class="details">
+                                                <div>
+                                                   <a href="#">Eric Kim</a> 
+                                                   <span class="label label-info">Pending</span>
+                                                </div>
+                                                <div>19 Jan 2013 12:45PM</div>
+                                             </div>
+                                          </div>
+                                          <div class="span6 user-info">
+                                             <img alt="" src="assets/img/avatar.png" />
+                                             <div class="details">
+                                                <div>
+                                                   <a href="#">Lisa Miller</a> 
+                                                   <span class="label label-important">In progress</span>
+                                                </div>
+                                                <div>19 Jan 2013 11:55PM</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row-fluid">
+                                          <div class="span6 user-info">
+                                             <img alt="" src="assets/img/avatar.png" />
+                                             <div class="details">
+                                                <div><a href="#">Eric Kim</a> <span class="label label-info">Pending</span>
+                                                </div>
+                                                <div>19 Jan 2013 12:45PM</div>
+                                             </div>
+                                          </div>
+                                          <div class="span6 user-info">
+                                             <img alt="" src="assets/img/avatar.png" />
+                                             <div class="details">
+                                                <div>
+                                                   <a href="#">Lisa Miller</a> 
+                                                   <span class="label label-important">In progress</span>
+                                                </div>
+                                                <div>19 Jan 2013 11:55PM</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row-fluid">
+                                          <div class="span6 user-info">
+                                             <img alt="" src="assets/img/avatar.png" />
+                                             <div class="details">
+                                                <div><a href="#">Eric Kim</a> <span class="label label-info">Pending</span>
+                                                </div>
+                                                <div>19 Jan 2013 12:45PM</div>
+                                             </div>
+                                          </div>
+                                          <div class="span6 user-info">
+                                             <img alt="" src="assets/img/avatar.png" />
+                                             <div class="details">
+                                                <div>
+                                                   <a href="#">Lisa Miller</a> 
+                                                   <span class="label label-important">In progress</span>
+                                                </div>
+                                                <div>19 Jan 2013 11:55PM</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row-fluid">
+                                          <div class="span6 user-info">
+                                             <img alt="" src="assets/img/avatar.png" />
+                                             <div class="details">
+                                                <div>
+                                                   <a href="#">Eric Kim</a> 
+                                                   <span class="label label-info">Pending</span>
+                                                </div>
+                                                <div>19 Jan 2013 12:45PM</div>
+                                             </div>
+                                          </div>
+                                          <div class="span6 user-info">
+                                             <img alt="" src="assets/img/avatar.png" />
+                                             <div class="details">
+                                                <div>
+                                                   <a href="#">Lisa Miller</a> 
+                                                   <span class="label label-important">In progress</span>
+                                                </div>
+                                                <div>19 Jan 2013 11:55PM</div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--END TABS-->
+                        </div>
+                     </div>
+                     <!-- END PORTLET-->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- END PAGE CONTAINER-->    
+      </div>
+      <!-- END PAGE -->
+   </div>
+   <!-- END CONTAINER -->
+   <!-- BEGIN FOOTER -->
+   <div class="footer">
+      2013 &copy; Biowave Systems by Glonetex Technologies.
+            <div class="span pull-right">
+         <span class="go-top"><i class="icon-angle-up"></i></span>
+      </div>
+   </div>
+   <!-- END FOOTER -->
+   <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+   <!-- BEGIN CORE PLUGINS -->
+   <script src="assets/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>   
+   <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->  
+   <script src="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+   <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+   <!--[if lt IE 9]>
+   <script src="assets/plugins/excanvas.js"></script>
+   <script src="assets/plugins/respond.js"></script>  
+   <![endif]-->   
+   <script src="assets/plugins/breakpoints/breakpoints.js" type="text/javascript"></script>  
+   <!-- IMPORTANT! jquery.slimscroll.min.js depends on jquery-ui-1.10.1.custom.min.js --> 
+   <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+   <script src="assets/plugins/jquery.blockui.js" type="text/javascript"></script>  
+   <script src="assets/plugins/jquery.cookie.js" type="text/javascript"></script>
+   <script src="assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script> 
+   <!-- END CORE PLUGINS -->
+   <!-- BEGIN PAGE LEVEL PLUGINS -->
+   <script src="assets/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>   
+   <script src="assets/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+   <script src="assets/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+   <script src="assets/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+   <script src="assets/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+   <script src="assets/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+   <script src="assets/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>  
+   <script src="assets/plugins/flot/jquery.flot.js" type="text/javascript"></script>
+   <script src="assets/plugins/flot/jquery.flot.resize.js" type="text/javascript"></script>
+   <script src="assets/plugins/jquery.pulsate.min.js" type="text/javascript"></script>
+   <script src="assets/plugins/bootstrap-daterangepicker/date.js" type="text/javascript"></script>
+   <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>     
+   <script src="assets/plugins/gritter/js/jquery.gritter.js" type="text/javascript"></script>
+   <script src="assets/plugins/fullcalendar/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+   <script src="assets/plugins/jquery.sparkline.min.js" type="text/javascript"></script>  
+   <script src="assets/plugins/jquery-knob/js/jquery.knob.js"></script>   
+
+   <!-- END PAGE LEVEL PLUGINS -->
+   <!-- BEGIN PAGE LEVEL SCRIPTS -->
+   <script src="assets/scripts/app.js" type="text/javascript"></script>
+   <script src="assets/scripts/index.js" type="text/javascript"></script>
+   <script src="assets/scripts/ui-sliders.js"></script>        
+   <!-- END PAGE LEVEL SCRIPTS -->  
+   <script>
+      jQuery(document).ready(function() {    
+         App.init(); // initlayout and core plugins
+         Index.init();
+         Index.initJQVMAP(); // init index page's custom scripts
+         Index.initCalendar(); // init index page's custom scripts
+         Index.initChat();
+         Index.initDashboardDaterange();
+         Index.initIntro();
+		 UISliders.initSliders();
+         UISliders.initKnowElements();
+      });
+   </script>
+   <!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>
